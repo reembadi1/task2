@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap">
+   
+    <style>
+        body {
+            font-family: 'Tajawal', sans-serif; 
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9; 
+            
+        }
+        .head{
+            border: 5px solid #607d8b; 
+            background-color: #455a64; 
+            color: #ffffff; 
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 10px;
+            flex-direction: row-reverse; 
+        }
+        .myimg{
+            height: 80px;
+            padding: 5px;
+        }
+        .option{
+            display: flex;
+            gap: 20px;
+            color: #ffffff; 
+            font-size: large;
+            flex-direction: row-reverse; 
+        }
+        .option a{
+            color: #ffffff; 
+            text-decoration: none;
+        }
+        .option a:hover{
+            text-decoration: underline;
+            background-color: #607d8b; 
+        }
+        .main-content{
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            background-color: #cfd8dc; 
+        }
+        .content{
+            text-align: right;
+            padding: 10px;
+           
+        }
+        .img2{
+            height: 200px;
+            margin-left: 20px; 
+        }
+        .contant2{
+            height: 150px;
+            background-color: #d5a05b70; 
+            color: #5d5937;
+            align-content: center;
+            padding: 20px;
+            margin: 20px;
+            display: flex;
+            justify-content: center; 
+            align-items: center; 
+            text-align: center; 
+            gap: 10px;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(17, 17, 18, 0.868);
+        }
+        button {
+            background-color: #455a64; 
+            color: #ffffff; 
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #607d8b; 
+        }
+        .content3{
+            display: flex;
+            gap: 50px;
+            content: counter(name);
+            justify-content: center;
+            padding: 20px;
+            display: flex; 
+            justify-content: center;
+            align-items: center; 
+            text-align: center; 
+        }
+        .content4{
+            display: flex;
+            gap: 50px;
+            content: counter(name);
+            justify-content: center;
+            padding: 20px;
+            display: flex; 
+            justify-content: center;
+            align-items: center; 
+            text-align: center;
+        }
+        .Square1{
+            
+            background-color: #d6e8f0;
+            height: 300px;
+            width: 250px;
+            border: 2px solid black;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(17, 17, 18, 0.868);
+        }
+        .Square2{
+            background-color: #d6e8f0;
+            height: 300px;
+            width: 250px;
+            border: 2px solid black;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(17, 17, 18, 0.868);
+        }
+        .Square3{
+            background-color: #d6e8f0;
+            height: 300px;
+            width: 250px;
+            border: 2px solid black;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(17, 17, 18, 0.868);
+        }
+        .text1{
+            padding: 20px;
+            justify-content: center;
+        }
+        .text2{
+            padding: 20px;
+            justify-content: center;
+            
+        }
+        .text3{
+            padding: 20px;
+            justify-content: center;
+        }
+        .contant33{
+            text-align: center;
+        }
+        .content3 img{
+            height: 100px; 
+            margin-bottom: 1px; 
+            padding: 10px;
+            
+        }
+        .contant44{
+            text-align: center;
+        }
+.Square4-1 , .Square4-2 , .Square4-3 {
+        background-color: #d6e8f0;
+            height: 300px;
+            width: 250px;
+            border: 2px solid black;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(17, 17, 18, 0.868);
+}
+.background-contant4{
+    background-color: #dda53c31;
+}
+.text2{
+    text-align: center;
+    padding: 20px;
+    margin-bottom: center;
+    
+}
+.Square4-1 , .Square4-2 , .Square4-3 {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    padding-bottom: 20px;
+}
+.contant5{
+    display: grid;
+    border: 1px solid black;
+    padding: 30px;
+    margin: 30px;
+    justify-items: center;
+    align-items: center;
+    
+}
+.text-for-contant5{
+    color: #65b9d2;
+    size: 20px;
+}
+.photo-for-contant5{
+    height: 200px;
+    width: 300px;
+    margin-right: 40px;
+    margin-top: 20px;
+    
+}
+.contant5 button{
+   margin-top: 50px; 
+}
+.footer-style{
+    display: flex;
+    gap: 20px;  
+    font-size: xx-small;
+    border: 2px solid rgb(3, 136, 193);
+    background-color:rgb(3, 136, 193); 
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    
+}
+.footer-style :hover{
+    color: #030303;
+}
+    </style>
+</head>
+<body>
+    <div class="head">
+        <img class="myimg" src="./iiitc_logo.jpeg" alt="">
+        
+        <div class="option">
+            <a href="section1">المحتوى التعليمي</a>
+           <div class="dropdown">
+             <a href="section2">منصاتنا</a>
+           </div>
+        </div>
+            <a href="./login.html"><button>تسجيل الدخول</button></a>
+           <a href="./login2.html"><button>انشاء حساب</button></a>
+        </div>
+    </div> 
+           
+    <div class="main-content">
+        <img class="img2" src="./3344361.png" alt="صورة جانبية">
+        <div class="content">
+            <h1>تعلم البرمجة</h1>
+            <h3>وابدأ بصناعة حلول لمشاكل العالم</h3>
+            <h4>توفر لك منصة واجهه الابتكار التعليمية محتوى متنوع ومتكامل يساعدك في تعلم البرمجة بكل سهولة ومتعة</h4>
+            <button>سجل وابدأ بالتعلم</button>
+        </div>
+    </div>
+    <div class="contant2">
+        <h3>محتوى تعليمي بجودة عالية</h3>
+        <h3>نفخر بتقديم محتوى عربي تقني عالي الجودة</h3>
+        <h3>يمكن من خلاله تعلم البرمجة في أهم المجالات التقنية</h3>
+    </div>
+
+    <h1 class="contant33">اهم المميزات</h1>
+    <div class="content3">
+       
+<div class="Square1">
+    <img src="./idea_icon_no_background.png" alt="">
+    <h3 class="text1">تعلّم أحدث التقنيات</h3>
+<h4>تقدم محتوى متجدد وفقًا لأحدث التقنيات المطلوبة في سوق العمل</h4>
+</div>
+<div class="Square2">
+<img src="./محتوى تعليمي_no_background.png" alt="">
+<h3  class="text2" >محتوى تعليمي متنوع</h3>
+<h4>تقدم محتوى متنوع ومتكامل يخدم مختلف الفئات والمجالات</h4>
+</div>
+
+<div class="Square3" >
+    <img src="./تعلم سريع1.png" alt="">
+    <h3 class="text3">تعلّم سهل وممتع</h3>
+    <h4>تقدم محتوى تعليمي بشكل بسيط وممتع وبجودة عالية</h4>
+</div>
+
+
+
+    </div>
+
+    <div>
+
+<div class="background-contant4">
+        <h1 class="contant44"> انواع المحتوى التعليمي</h1>
+        <div class="content4">
+           
+    <div class="Square4-1">
+        <img src="" alt="">
+        <h3 class="text1">مسارات</h3>
+    <h4 class="text2">توضح لك معالم الطريق الذي تحتاجه لتصل لهدف معين من خلال مجموعة من الدورات والمشاريع التطبيقية المقترحة التي تشكل حزمة تعليمية متكاملة.</h4>
+    </div>
+    <div class="Square4-2">
+    <img src="" alt="">
+    <h3  class="text2" > دورات</h3>
+    <h4>تقدم محتوى متنوع ومتكامل يخدم مختلف الفئات والمجالات.</h4>
+    </div>
+    
+    <div class="Square4-3" >
+        <img src="" alt="">
+        <h3 class="text3"> مشاريع تطبيقيه </h3>
+        <h4>تقدم محتوى متجدد وفقًا لأحدث التقنيات المطلوبة في سوق العمل.</h4>
+    </div>
+    
+    </div>
+</div>
+
+<div class="contant5">
+<h1 class="text-for-contant5">يمكنك البدء بتصفح  كامل المحتوى التعليمي</h1>
+<img class="photo-for-contant5" src="./لقطة_شاشة_بدون_خلفية.png" alt="">
+<button >تصفح الان</button>
+</div>
+<footer class="footer-style">
+
+     <a href=""><h1>سياسه الخصوصيه</h1></a>
+    <a href=""><h1>الشروط و الاحكام</h1></a>
+    <a href=""><h1>الاساله الشائعه</h1></a>
+    <a href=""><h1>تواصل معنا</h1></a>
+    
+
+</footer>
+</body>
+</html>
